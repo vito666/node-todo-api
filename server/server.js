@@ -1,11 +1,11 @@
 let express = require("express");
 let bodyParser = require("body-parser");
 
-let {mongoose} = require("./db/mongoose.js");
-let {Todo} = require("./models/todo");
-let {User} = require("./models/user");
+const {mongoose} = require("./db/mongoose.js");
+const {Todo} = require("./models/todo");
+const {User} = require("./models/user");
 
-let app = express();
+const app = express();
 
 app.use(bodyParser.json());
 
