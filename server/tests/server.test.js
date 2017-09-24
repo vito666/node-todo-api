@@ -10,15 +10,15 @@ const todos = [{
     text: "Second test todo"
 }];
 
-//beforeEach((done) => {
-//    Todo.remove({}).then(() => {
-//        Todo.insertMany(todos);
-//    }).then(() => done());
-//});
+beforeEach((done) => {
+    Todo.remove({}).then(() => {
+        Todo.insertMany(todos);
+    }).then(() => done());
+});
 
 describe("POST /todos", () => {
    it("Should create new todo", (done) => {
-       var text = "Test todo text";
+       let text = "Test todo text";
 
        request(app)
        .post("/todos")

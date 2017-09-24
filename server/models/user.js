@@ -1,6 +1,6 @@
-var mongoose = require("mongoose");
+let mongoose = require("mongoose");
 
-var User = mongoose.model("Users", {
+let User = mongoose.model("Users", {
     email: {
         required: true,
         trim: true,
